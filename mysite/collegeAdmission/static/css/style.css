@@ -7,7 +7,7 @@
     border: 1px solid #d3e0e9;
     border-radius: 2px;
     width: 500px;
-    margin: auto;
+    
 }
 
 .nav{
@@ -23,7 +23,7 @@
 }
 
 .login{
-    padding-top: 150px;
+    padding-top: 80px;
     margin: 0 5px;
 }
 .btn-login{

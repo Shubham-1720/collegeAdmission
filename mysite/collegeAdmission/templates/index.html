@@ -9,9 +9,14 @@
     {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <title>Student Admission</title>
+     <style>@media screen and (max-width: 600px) {
+        .admission-form {
+width: 100%;
+        }
+     }</style>
 </head>
 <body>
-    <div class="admission-form">
+    <div class="admission-form mx-auto p-2 " >
         <div class="nav p-2">
             Already Registered
         </div>

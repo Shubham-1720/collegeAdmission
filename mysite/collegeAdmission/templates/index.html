@@ -9,14 +9,9 @@
     {% bootstrap_javascript %}
     <link rel="stylesheet" href="{% static 'css/style.css'%}">
     <title>Student Admission</title>
-     <style>@media screen and (max-width: 600px) {
-        .admission-form {
-width: 100%;
-        }
-     }</style>
 </head>
 <body>
-    <div class="admission-form mx-auto p-2 " >
+    <div class="admission-form">
         <div class="nav p-2">
             Already Registered
         </div>
@@ -29,6 +24,11 @@ width: 100%;
         <div class="field d-flex flex-column pt-4 ms-2 me-2">
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Password" required>
+        </div>
+        <div class="mt-2 p-2 text-center">
+            <a href="" class="mb-5">
+                <em>Forgot Password</em>
+            </a>Click to Reset your Password
         </div>
             <div class="login">
                 <button class="btn-login" type="submit">Login</button>

@@ -1,0 +1,39 @@
+{% extends 'navbar.html'%} {% load static %} {%block title%}Student Admission
+{%endblock%} {%block body%}
+<div class="admission-form m-auto mt-2">
+  <div class="nav p-2">Student Login</div>
+
+  <form action="/collegeAdmission/login" method="post">
+    {% csrf_token %}
+    <div class="field d-flex flex-column pt-4 ms-2 me-2">
+      <label for="stu_email">Student Email</label>
+      <input
+        type="text"
+        name="stu_email"
+        id="stu_email"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="field d-flex flex-column pt-4 ms-2 me-2">
+      <label for="password">Password</label>
+      <input
+        type="password"
+        name="password"
+        id="password"
+        placeholder="Password"
+        required
+      />
+    </div>
+    <div class="login">
+      <button class="btn-login" type="submit">Login</button>
+    </div>
+    <div class="mt-2 p-2 text-center">
+      <a href="" class="mb-5">
+        <em>Forgot Password</em> </a
+      >Click to Reset your Password
+    </div>
+  </form>
+</div>
+{%endblock%}
+

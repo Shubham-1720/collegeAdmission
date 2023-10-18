@@ -1,0 +1,46 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{%block title %}Student Details{%endblock%}
+{%block body %}
+<div class="admission-form m-auto mt-2">
+    <div class="nav p-2">Details of {{student_details.student_name}}</div>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Student Name:</th>
+            <th scope="col">{{student_details.student_name}}</th>
+            
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Email:</th>
+            <td>{{student_details.student_email}}</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">Contact number:</th>
+            <td>{{student_details.student_phno}}</td>
+            
+          </tr>
+          <tr>
+            <th scope="row">Gender:</th>
+            <td>{{student_details.student_gender}}</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Date of Birth:</th>
+            <td>{{student_details.student_dob}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="login-details">
+        <button class="btn-login" type="submit" onclick="logOut()">Log out</button>
+    </div>
+    
+</div>
+
+{%endblock%}
+

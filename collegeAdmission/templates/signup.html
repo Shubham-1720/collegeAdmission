@@ -1,0 +1,58 @@
+{% extends 'navbar.html'%}
+{% load static%}
+{%block title%}Sign-in{%endblock%}
+{%block body%}
+<div class="admission-form m-auto mt-2">
+    <div class="nav p-2">
+        New User? Register
+    </div>
+
+    <form action="/collegeAdmission/saveStudentRegistration" method="post">
+        {% csrf_token %}
+        <div class="field d-flex flex-column pt-4 ms-2 me-2">
+            <label for="name">Name</label>
+            <input type="text" name="student_name" id="name"
+                placeholder="Enter your name" required>
+        </div>
+        <div class="field d-flex flex-column pt-4 ms-2 me-2">
+        <label for="email">Email</label>
+            <input type="email" name="student_email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="field d-flex flex-column pt-4 ms-2 me-2">
+        <label for="phnumber">Contact number</label>
+            <input type="text"  name="student_phno" id="phnumber" placeholder="Enter your contact number" required>
+        </div>
+
+        <div class="field d-flex flex-row pt-2 ms-2 me-2">
+        
+        <label class="m-2" for="gender">Gender: Male</label>
+            <input class="m-2" type="radio" value="Male" name="student_gender" id="gender" required>
+        <label class="m-2" for="gender">Female</label>
+            <input class="m-2" type="radio" value="Female" name="student_gender" id="gender" required>
+        </div>
+        
+        <div class="field d-flex flex-column pt-2 ms-2 me-2">
+        <label for="dob">D.O.B</label>
+            <input type="date" name="student_dob" id="dob" required>
+        </div>
+
+
+        <div class="field d-flex flex-column pt-4 ms-2 me-2">
+            <label for="password">Create password</label>
+            <input type="password" name="student_pwd" id="password" placeholder=" Create new password" required>
+        </div>
+          
+        <div class="field d-flex flex-column pt-4 ms-2 me-2">
+            <label for="confpassword">Confirm password</label>
+            <input type="password" name="student_cpwd" id="confpassword" placeholder="Confirm password" required>
+        </div>
+          
+
+        <div class="login">
+            <button class="btn-login" type="submit" onclick="alert(`Student Registered Successfully`)">Sign Up</button>
+        </div>
+    
+    </form>
+</div>
+{%endblock%}

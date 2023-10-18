@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <title>{%block title%} {%endblock%}</title>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbar-container">
+            
+            <div class="img-container ms-2 mt-2">
+                <img src="{% static 'img/logo.png'%}" alt="">
+            </div>
+            
+            
+            <div class="navigations">
+                <h4 class="pt-2 ms-4">Atma Ram Sanatan Dharma College</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Admission Bulletion</a></li>
+                    <li><a href="#">Admission</a></li>
+                </ul>
+            </div>
+            <div class="btn my-4" style="position: absolute; right: 0;">
+                <button type="button" class="btn-sign-in px-3 py-1 rounded" onclick="signUp()">SignUp</button>
+                <button type="button" class="btn-log-in px-3 py-1 rounded ms-2" onclick="logIn()">Login</button>
+            
+                
+            </div>
+        </div>
+    </navbar>
+    {%block body%}{%endblock%}
+    <script src="{% static 'js/base.js' %}"></script>
+    
+
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar */
+.navbar-container{
+    background-color: #d3e0e9;
+    height: auto;
+    display: flex;
+    width: 100%;
+}
+
+
+.img-container img{
+    width: 83px;
+    height: 80px;
+}
+
+.navigations ul{
+    list-style: none;
+    display: flex;
+    padding: 5px;
+    
+    
+}
+.navigations ul li{
+    padding-left: 20px;
+}
+
+.navigations ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn-log-in{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+
+}
+.btn-sign-in{
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+
+}
+.btn-log-in:hover{
+    background-color: #d3e0e9;
+    color: black;
+}
+.btn-sign-in:hover{
+    background-color: #d3e0e9;
+    color: black;
+}
+
+/* Registeration form  */
+.admission-form{
+    border: 1px solid #d3e0e9;
+    border-radius: 2px;
+    width: 500px;
+    
+}
+
+.nav{
+    height: 50px;
+    background-color: #d3e0e9;
+    font-size: 20px;
+}
+
+
+.field input{
+    padding: 4px;
+
+}
+
+.login{
+    padding-top: 40px;
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+.btn-login{
+    width: 100%;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+.login-details{
+    padding-top: 10px;
+    margin: 0 5px;
+    margin-bottom: 5px;
+}
+/* Resposive  */
+@media only screen and (max-width:500px){
+    .admission-form{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:550px){
+    .btn{
+        flex-wrap: wrap;
+    }
+}
